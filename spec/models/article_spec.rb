@@ -10,7 +10,7 @@ RSpec.describe Article, type: :model do
     # article = Article.create({ title: 'sample article', content: 'sample content', slug: 'sample-article' })
     # article = FactoryBot.create(:article)
     article = create(:article)
-    expect(article.title).to eq('sample article')
+    expect(article.title).to eq('sample article 1')
   end
 
   describe '#validations' do
