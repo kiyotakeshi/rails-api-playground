@@ -11,4 +11,5 @@ Rails.application.routes.draw do
   # this approach helps create rules for all CRUD operation
   # resources :articles
   resources :articles, only: [:index]
+  resources :articles, only: %i[:index show]
 end
